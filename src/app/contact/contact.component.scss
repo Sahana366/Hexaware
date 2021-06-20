@@ -1,0 +1,33 @@
+@import '../../styles.scss';
+.input {
+  transition: box-shadow 0.3s, border-color 0.3s;
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(88, 99, 248, 0.15);
+  }
+}
+button{
+  background: white;
+  color: $theme-secondary;
+  border: none;
+  border-radius: 16px;
+  padding: 7px 15px;
+  font-family: $font-bold;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.left{
+  flex: 2;
+  margin: 0 0 20px 0;
+}
+.right{
+  flex: 1;
+  padding: 10px;
+}

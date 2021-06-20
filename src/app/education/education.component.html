@@ -1,0 +1,102 @@
+<div class="education" [style.width]="eduWidth">
+<div class="heading">Education
+  <span class="mr-5">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30px" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve"><polygon points="0,5 8,9 15,5.5 15,14 16,14 16,5 8,1 " style="fill: #ffffff;"/><polygon points="3,7.059 3,11.5 8,14 13,11.5 13,7.059 8,9.559 " style="fill: #ffffff;"/></svg>
+  </span></div>
+    <!-- <mat-grid-list [cols]="breakpoints" rowHeight="200px" (window:resize)="onResize($event.target)">
+        <mat-grid-tile [colspan]="eduColums[0]" >
+          <div>
+            <div class="qualification">MSSE</div>
+            <div class="school">
+              <span>
+                
+              </span>
+              VIT University</div>
+            <div class="place">Chennai, TamilNadu</div>
+            <div class="score">CGPA - 8.24</div>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile  [colspan]="eduColums[1]">
+          <div>
+            <div>MSSE</div>
+            <div>VIT University</div>
+            <div>Chennai, TamilNadu</div>
+            <div>CGPA - 8.24</div>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile  [colspan]="eduColums[1]">
+          <div>
+            <div>MSSE</div>
+            <div>VIT University</div>
+            <div>Chennai, TamilNadu</div>
+            <div>CGPA - 8.24</div>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list> -->
+      <!-- <div class="">
+      <div class="step">
+        <div>
+           <div class="circle">
+
+           </div>
+        </div>
+        <div>
+           <div class="title">
+             <div>First Step</div>
+             <div>Second Step</div>
+             <div>Third Step</div>
+            </div>
+           <div class="caption">Optional</div>
+        </div>
+     </div>
+     <div class="step">
+        <div>
+           <div class="circle"></div>
+        </div>
+        <div>
+           <div class="title">Second Step</div>
+           <div class="caption">This is description of second step.</div>
+        </div>
+     </div>
+     <div class="step">
+        <div>
+           <div class="circle"></div>
+        </div>
+        <div>
+           <div class="title">Third Step</div>
+           <div class="caption">Some text about Third step. </div>
+        </div>
+     </div>
+     <div class="step">
+        <div>
+           <div class="circle"></div>
+        </div>
+        <div>
+           <div class="title">Finish</div>
+        </div>
+     </div>
+    </div> -->
+    <mat-vertical-stepper>
+      <mat-step>
+        <ng-template matStepLabel>Step 1</ng-template>
+        <ng-template matStepContent>
+          <p>This content was rendered lazily</p>
+          <button mat-button matStepperNext>Next</button>
+        </ng-template>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Step 2</ng-template>
+        <ng-template matStepContent>
+          <p>This content was also rendered lazily</p>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </ng-template>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Step 3</ng-template>
+        <p>This content was rendered eagerly</p>
+        <button mat-button matStepperPrevious>Back</button>
+      </mat-step>
+    </mat-vertical-stepper>
+      
+  </div>

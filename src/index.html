@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HexaVarsity</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      // Load Charts and the corechart package.
+      google.charts.load("current", {
+        packages: ["corechart"],
+      });
+
+      // Draw the pie chart for 2019 when Charts is loaded.
+      google.charts.setOnLoadCallback(draw2019Chart);
+
+      // Draw the pie chart for the 2020 when Charts is loaded.
+      google.charts.setOnLoadCallback(draw2020Chart);
+
+      // Draw the pie chart for the 2020 when Charts is loaded.
+      google.charts.setOnLoadCallback(draw2021Chart);
+
+      // Callback that draws the pie chart for Sarah's pizza.
+      function draw2019Chart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn("string", "Topping");
+        data.addColumn("number", "Slices");
+        data.addRows([
+          ["Offered/Hired", 2],
+          ["Rejected", 3],
+          ["Accepted", 1.5],
+        ]);
+
+        var options = {
+          title: "2019",
+          width: 400,
+          height: 300,
+        };
+
+        var chart = new google.visualization.PieChart(
+          document.getElementById("piechart")
+        );
+        chart.draw(data, options);
+      }
+
+      function draw2020Chart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn("string", "Topping");
+        data.addColumn("number", "Slices");
+        data.addRows([
+          ["Offered/Hired", 3.5],
+          ["Rejected", 3.5],
+          ["Accepted", 3],
+        ]);
+
+        var options = {
+          title: "2020",
+          width: 400,
+          height: 300,
+        };
+
+        var chart = new google.visualization.PieChart(
+          document.getElementById("piechart1")
+        );
+        chart.draw(data, options);
+      }
+
+      function draw2021Chart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn("string", "Topping");
+        data.addColumn("number", "Slices");
+        data.addRows([
+          ["Offered/Hired", 4],
+          ["Rejected", 2],
+          ["Accepted", 3.5],
+        ]);
+
+        var options = {
+          title: "2021",
+          width: 400,
+          height: 300,
+        };
+
+        var chart = new google.visualization.PieChart(
+          document.getElementById("piechart2")
+        );
+        chart.draw(data, options);
+      }
+    </script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <!-- line chart -->
+    <script type="text/javascript">
+      window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+          animationEnabled: true,
+          theme: "light2",
+          title: {
+            text: "IT Employees",
+            indexLabelFontSize: 22
+          },
+          data: [
+            {
+              type: "line",
+              indexLabelFontSize: 16,
+              dataPoints: [
+                { y: 450 },
+                { y: 414 },
+                { y: 520 },
+                { y: 460 },
+                { y: 450 },
+                { y: 500 },
+                { y: 480 },
+                { y: 480 },
+                { y: 410 },
+                { y: 500 },
+                { y: 480 },
+                { y: 510 },
+              ],
+            },
+          ],
+        });
+        chart.render();
+        var chart2 = new CanvasJS.Chart("chartContainer2", {
+          animationEnabled: true,
+          theme: "light2",
+          title: {
+            text: "Non IT Employees",
+          },
+          data: [
+            {
+              type: "line",
+              indexLabelFontSize: 16,
+              dataPoints: [
+                { y: 350 },
+                { y: 213 },
+                { y: 435},
+                { y: 460 },
+                { y: 300 },
+                { y: 250 },
+                { y: 540 },
+                { y: 120 },
+                { y: 350 },
+                { y: 439 },
+                { y: 520 },
+                { y: 90 },
+              ],
+            },
+          ],
+        });
+        chart2.render();
+        var chart3 = new CanvasJS.Chart("chartContainer3", {
+          animationEnabled: true,
+          theme: "light2",
+          title: {
+            text: "Male Employees",
+          },
+          data: [
+            {
+              type: "line",
+              indexLabelFontSize: 16,
+              dataPoints: [
+                { y: 350 },
+                { y: 213 },
+                { y: 435},
+                { y: 460 },
+                { y: 300 },
+                { y: 250 },
+                { y: 540 },
+                { y: 120 },
+                { y: 350 },
+                { y: 439 },
+                { y: 520 },
+                { y: 90 },
+              ],
+            },
+          ],
+        });
+        chart3.render();
+        var chart4 = new CanvasJS.Chart("chartContainer4", {
+          animationEnabled: true,
+          theme: "light2",
+          title: {
+            text: "Female Employees",
+          },
+          data: [
+            {
+              type: "line",
+              indexLabelFontSize: 16,
+              dataPoints: [
+                { y: 350 },
+                { y: 213 },
+                { y: 435},
+                { y: 460 },
+                { y: 300 },
+                { y: 250 },
+                { y: 540 },
+                { y: 120 },
+                { y: 350 },
+                { y: 439 },
+                { y: 520 },
+                { y: 90 },
+              ],
+            },
+          ],
+        });
+        chart4.render();
+      };
+    </script>
+  </head>
+
+  <body>
+    <app-root></app-root>
+  </body>
+</html>

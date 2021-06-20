@@ -1,0 +1,126 @@
+@import "./../../styles.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font-regular;
+  // vertical-align: middle;
+}
+.header-container {
+  // display: flex;
+  justify-content: center;
+  color: $white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #383838;
+  position: fixed;
+  width: 100%;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+//   background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #909090;
+  background-color: $theme-secondary;
+  z-index: 10000;
+}
+
+.left-content {
+  font-family: $font-extra-bold;
+  padding: 10px;
+  color: $white;
+}
+
+.right-content {
+  font-family: $font-bold;
+  padding: 15px 10px;
+  display: flex;
+  font-weight: 600;
+}
+
+.menu {
+  padding: 0 20px;
+  display: flex;
+}
+.mr-1{
+  margin-right: 1px;
+}
+.mr-2{
+  margin-right: 2px;
+}
+.mr-3{
+  margin-right: 3px;
+}
+.mr-4{
+  margin-right: 4px;
+}
+.mr-5{
+  margin-right: 5px;
+}
+.svg{
+  width: 20px;
+  height: 20px;
+}
+.banner-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/images/Hexaware-Siruseri-Campus-1.jpg");
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+}
+
+.banner-text {
+  color: $white;
+  text-align: center;
+  margin: auto;
+}
+.name{
+  font-size: 25px;
+  font-family: $font-extra-bold;
+}
+.caption{
+  font-size: 16px;
+  font-family: $font-medium;
+  margin-top: 10px;
+}
+.icons{
+  padding: 20px 0px;
+  a{
+    padding: 0px 20px;
+  }
+}
+.icon{
+  width: 30px;
+}
+.button{
+  padding: 10px 0px;
+}
+.msg-me{
+  padding: 5px 10px;
+  background-color: $white;
+  color: $theme-secondary;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  text-transform: capitalize;
+  font-family: $font-bold;
+}
+.content-container {
+  position: relative;
+  top: 600px;
+}
+.container-one{
+  background-color: $white;
+  color: $theme-secondary;
+}
+.container-two{
+  background-color: $theme-secondary;
+  color: $white;
+}

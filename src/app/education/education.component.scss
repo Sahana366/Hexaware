@@ -1,0 +1,91 @@
+@import '../../styles.scss';
+
+.education {
+  padding: 50px 0px;
+  // width: 80%;
+  margin: 0 auto;
+}
+
+.qualification {
+  font-size: 18px;
+  font-family: $font-bold;
+}
+
+.step {
+  position: relative;
+  min-height: 1em;
+  color: gray;
+}
+
+.title {
+  line-height: 1.5em;
+  font-family: $font-bold;
+  position: absolute;
+  right: 59%;
+  direction: rtl;
+}
+
+.caption {
+  font-size: 0.8em;
+  direction: ltr;
+  left: 59%;
+  top: 0;
+  position: absolute;
+}
+
+.step+.step {
+  margin-top: 1.5em
+}
+
+.step>div:first-child {
+  position: static;
+  height: 0;
+}
+
+.step>div:not(:first-child) {
+  margin-left: 1.5em;
+  padding-left: 1em;
+}
+
+/* Circle */
+.circle {
+  background: $theme-primary;
+  position: relative;
+  left: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 0 3px #fff;
+}
+
+/* Vertical Line */
+.circle:after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  top: 1px;
+  right: 50%;
+  bottom: 1px;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  transform: scale(1, 2);
+  transform-origin: 50% -100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.step:last-child .circle:after {
+  display: none
+}
+
+.step.step-active {
+  color: #4285f4
+}
+
+.step.step-active .circle {
+  background-color: #4285f4;
+}

@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+$font-light: "Font-Light";
+$font-regular: "Font-Regular";
+$font-medium: "Font-Medium";
+$font-bold: "Font-Bold";
+$font-extra-bold: "Font-Black";
+
+$white: #ffffff;
+$black: #000000;
+$theme-primary: #008a84;
+$theme-secondary: #002035;
+
+
+@font-face {
+  font-family: 'Font-Light';
+  src: url('./assets/fonts/MontserratLight-ywBvq.ttf');
+}
+
+@font-face {
+  font-family: 'Font-Regular';
+  src: url('./assets/fonts/MontserratRegular-BWBEl.ttf');
+}
+
+@font-face {
+  font-family: 'Font-Medium';
+  src: url('./assets/fonts/MontserratMedium-lgZ6e.otf');
+}
+
+@font-face {
+    font-family: 'Font-Bold';
+    src: url('./assets/fonts/MontserratBold-DOWZd.ttf');
+  }
+
+@font-face {
+    font-family: 'Font-Black';
+    src: url('./assets/fonts/MontserratBlack-ZVK6J.otf');
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.heading {
+  text-align: center;
+  font-family: $font-bold;
+  font-size: 26px;
+}
